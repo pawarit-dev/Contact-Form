@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contact form for inquiries and support.">
+        <meta name="author" content="Pawarit Setsuwan">
+        <title>Acme Support</title>
+    </head>
+    <body>
+        <header>
+            <h1>Acme Support</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="help.html">Help</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <br><hr>
+        </header>
+        <main>
+            <h2>Contact Us</h2>
+            <p>Send us a message using the form below:</p>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support Request</option>
+                    <option value="feedback">Feedback</option>
+                </select><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+                <fieldset id="source" name="source" required>
+                    <legend>How did you hear about us?</legend>
+                    <input type="radio" id="search" name="source" value="search" required>
+                    <label for="search">Search</label><br>
+                    <input type="radio" id="friend" name="source" value="friend">
+                    <label for="friend">Friend</label><br>
+                    <input type="radio" id="social" name="source" value="social">
+                    <label for="social">Social Media</label><br>
+                </fieldset><br>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Send me product updates</label><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br><hr>
+        </main>
+        <footer>
+            <p>&copy; 2026 Acme Support. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
